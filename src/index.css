@@ -1,14 +1,106 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@media (min-width: 768px) {
+  .title {
+    font-size: 52px;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.navbar-brand {
+  font-size: 25px;
+  color: #000;
+}
+
+.nav .nav-link,
+.nav .nav-link .btn {
+  font-size: 14px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item:last-child .nav-link {
+  padding-right: 0;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.btn.btn-primary {
+  background-color: #000;
+  border-color: #000;
+}
+
+.title {
+  margin-bottom: 0;
+  font-size: 33px;
+}
+
+.separator {
+  width: 100%;
+  height: 0.5rem;
+  margin: 1rem auto;
+  background-color: rgba(0, 0, 0, 0.125);
+  opacity: 0.1;
+}
+
+@media (min-width: 768px) {
+  .separator {
+    height: 1px;
+    opacity: 1;
+  }
+}
+
+.card {
+  border-radius: 0;
+}
+
+.card .card-title {
+  margin-bottom: 0;
+  font-size: 25px;
+}
+
+.card .card-subtitle {
+  margin-bottom: 1rem;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.card .list-group-item {
+  padding: 0;
+}
+
+.card .card-text {
+  font-size: 16px;
+}
+
+.card .progress {
+  max-height: 4px;
+  margin: 1rem 0;
+}
+
+.card .progress.success {
+  background-color: #8cd60059;
+}
+
+.card .progress.success .progress-bar {
+  background-color: #8cd600;
+}
+
+.card .badge {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 24px;
+  padding: 4px 8px;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.card .badge-success {
+  border-radius: 0;
+  font-size: 11px;
+  text-transform: uppercase;
+  background-color: #8cd600;
 }
